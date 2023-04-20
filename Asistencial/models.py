@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.gis.geos import GE
 # Ubicacion usuario
 
 class cas(models.Model):
@@ -8,7 +7,6 @@ class cas(models.Model):
     tipoCas = models.CharField(max_length=10)
     distrito = models.CharField(max_length=100)
     estado = models.BooleanField()
-    cordenadasCas = models.Point
 
     def __str__(self):
         return (self.descripCas)
